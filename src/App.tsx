@@ -111,7 +111,7 @@ class App extends React.Component<{}, IState>{
                 song = {this.state.song}
               />
             <a href="https://www.facebook.com/sharer/sharer.php?u=https://lyricfindrkbmsa.azurewebsites.net/" target="_blank" rel="noopener">
-                <button>SHARE</button>
+                <button className="search">Share To Facebook</button>
             </a>
             </div>
           </span>
