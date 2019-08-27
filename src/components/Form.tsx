@@ -13,13 +13,14 @@ const Form = (props:any) => (
             <Typography variant="title" color="inherit" className="heade">
                 LyricFindr
             </Typography>
-            <img className="profilePic" src={props.urlPic || ''} width="60" height="60" />
+            
             <form onSubmit={props.logOut}>
                 <button className="logout">Log Out</button>
             </form>
             </Toolbar>
         </AppBar>
         <form onSubmit={props.lyricsFunc}>
+            <img alt="Profile Picture" className="profilePic" src={props.urlPic || ''} width="100" height="100" />
             <h1 className="name">{props.name}</h1>
             <input className="text" name="artist" placeholder="Artist Name"/>
             <input id="song" name="song" className="text" placeholder="Song Name"/>
